@@ -16,11 +16,11 @@
             android:title="@string/readings"/>
         <item
             android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:icon="@drawable/ic_queue_music"
+            android:title="@string/spiritual_word" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="@string/more">
         <menu>
             <item
                 android:id="@+id/nav_share"

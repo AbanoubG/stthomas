@@ -14,4 +14,6 @@
     <string name="announcements">Announcements</string>
     <string name="service_schedule">Service Schedule</string>
     <string name="readings">Readings</string>
+    <string name="spiritual_word">Spiritual Word</string>
+    <string name="more">More</string>
 </resources>
