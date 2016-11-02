@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">St.Thomas COC</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="email">church@stthomascoc.com</string>
+    <string name="username">St. Thomas The Hermit Coptic Orthodox Church</string>
+
+
+    <string name="main">MAIN</string>
+    <string name="main2">MAIN2</string>
+    <string name="announcements">Announcements</string>
+    <string name="service_schedule">Service Schedule</string>
+    <string name="readings">Readings</string>
+</resources>
