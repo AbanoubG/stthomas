@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.coc.stthomas.stthomascoc.ScheduleFragment"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:id="@+id/nav_spiritual"
+    android:layout_height="150sp">
+
+    <TextView
+        android:text="@string/spiritual_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        tools:text="Spiritual Notes"
+        android:textSize="36sp"
+        android:fontFamily="serif"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

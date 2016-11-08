@@ -29,9 +29,7 @@
     <string name="hymns_class">Hymns Class: 11:45am</string>
     <string name="vespers">Vespers: 6:30pm</string>
     <string name="pre_servants">Pre-Servants Class: 1pm</string>
-    <string name="compose_shortcut_short_label1"> Test </string>
-    <string name="compose_shortcut_long_label1">Test 2</string>
-    <string name="compose_disabled_message1">Test 3</string>
+    <string name="spiritual_notes">Spiritual Notes</string>
 
 
 </resources>
