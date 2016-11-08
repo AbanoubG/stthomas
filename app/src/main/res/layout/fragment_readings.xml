@@ -2,18 +2,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.coc.stthomas.stthomascoc.ScheduleFragment">
+    tools:context="org.coc.stthomas.stthomascoc.ReadingsFragment">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/main2"
-        android:padding="8dp"
-        android:textColor="#fff"
-        android:background="@color/colorPrimary"
-        android:textSize="28sp"
-        android:id="@+id/main_button"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+    <WebView
+        android:id="@+id/webview"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ProgressBar
+    android:id="@+id/progress1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="8dp" />
 
 </RelativeLayout>

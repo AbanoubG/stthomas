@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,6 +15,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.onesignal.OneSignal;
+
+import org.json.JSONObject;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -23,6 +28,10 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        OneSignal.startInit(this)
+                .setNotificationOpenedHandler(new ExampleNotificationOpenedHandler())
+                .init();
+
         setContentView(R.layout.activity_main);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -39,7 +48,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Not sure what to use this for", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -124,4 +133,28 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-}
+
+    // This fires when a notification is opened by tapping on it or one is received while the app is running.
+    private class ExampleNotificationOpenedHandler implements OneSignal.NotificationOpenedHandler {
+        @Override
+        public void notificationOpened(String message, JSONObject additionalData, boolean isActive) {
+
+        }
+    }   public void notificationOpened(String message, JSONObject additionalData, boolean isActive) {
+        try {
+            if (additionalData != null) {
+                if (additionalData.has("actionSelected"))
+                    Log.d("OneSignalExample", "OneSignal notification button with id " + additionalData.getString("actionSelected") + " pressed");
+
+                Log.d("OneSignalExample", "Full additionalData:\n" + additionalData.toString());
+            }
+
+        } catch (Throwable t) {
+            t.printStackTrace();
+
+        }
+
+
+
+
+}   }
