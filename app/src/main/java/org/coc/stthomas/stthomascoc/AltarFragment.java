@@ -40,7 +40,7 @@ public class AltarFragment extends Fragment{
 
         //Enable zoom
         webView.getSettings().setBuiltInZoomControls(true);
-        int default_zoom_level=100;
+        int default_zoom_level=55;
         webView.setInitialScale(default_zoom_level);
 
 
