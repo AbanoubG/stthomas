@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <array name="quotes_array">
+    <string-array name="quotes_array">
         <item> Element 1</item>
         <item> Element 2</item>
         <item> Element 3</item>
@@ -11,6 +11,6 @@
         <item> Element 8</item>
         <item> Element 9</item>
         <item> Element 10</item>
-    </array>
+    </string-array>
 
 </resources>

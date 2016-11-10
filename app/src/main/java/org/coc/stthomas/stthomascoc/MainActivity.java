@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity
 
         setContentView(R.layout.activity_main);
 
+
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -121,7 +122,13 @@ public class MainActivity extends AppCompatActivity
                     getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, fragment);
             fragmentTransaction.commit();
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_sermons) {
+            // Handle the spiritual word action
+            SermonsFragment fragment = new SermonsFragment();
+            android.support.v4.app.FragmentTransaction fragmentTransaction =
+                    getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, fragment);
+            fragmentTransaction.commit();
 
 
         } else if (id == R.id.nav_share) {
@@ -167,4 +174,12 @@ public class MainActivity extends AppCompatActivity
 
 
 
-}   }
+}
+
+
+
+
+
+
+}
+
